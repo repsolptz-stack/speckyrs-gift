@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Плитоноска «Страж-2» · СПЕЦКУРС</title>
+<meta name="description" content="Плитоноска «Страж-2»: Cordura 1000D, под пластины 250×300 мм, MOLLE. В наличии в шоуруме СпецКурс, Петрозаводск.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23131414'/%3E%3Cpath d='M14 20h36v8H22v8h20v8H14z' fill='%23d92b21'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#131414;--bg-deep:#0d0e0d;--panel:#1b1d1b;--olive:#5a6148;--olive-dim:#3a3f30;--red:#d92b21;--sand:#c8c2b0;--text:#e8e6e0;--muted:#9a9a92;--line:rgba(200,194,176,.14);--stencil:'Oswald',sans-serif;--body:'Inter',sans-serif;--mono:'Share Tech Mono',monospace}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a,button{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.25rem}
+.mono{font-family:var(--mono)}
+
+.topbar{background:var(--bg-deep);border-bottom:1px solid var(--line);font-size:.72rem;color:var(--muted)}
+.topbar .wrap{display:flex;justify-content:space-between;gap:1rem;padding-top:.5rem;padding-bottom:.5rem;flex-wrap:wrap}
+.topbar a:hover{color:#fff}
+.topbar .coords{color:var(--olive);letter-spacing:.08em}
+header.site{position:sticky;top:0;z-index:100;background:rgba(13,14,13,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:64px}
+.logo{display:flex;align-items:center;gap:.6rem}
+.logo-box{font-family:var(--stencil);font-weight:700;font-size:1.05rem;letter-spacing:.06em;color:#fff;background:var(--red);padding:.15rem .45rem}
+nav.main{display:flex;gap:1.5rem}
+nav.main a{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:.4rem 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+nav.main a:hover{color:#fff;border-color:var(--red)}
+.header-actions{display:flex;align-items:center;gap:.75rem}
+.cart-link{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text);border:1px solid var(--line);padding:.5rem .9rem;transition:border-color .2s,color .2s}
+.cart-link:hover{border-color:var(--red);color:#fff}
+.burger{display:none;flex-direction:column;gap:5px;padding:.5rem}
+.burger span{width:22px;height:2px;background:var(--text)}
+@media(max-width:860px){
+  nav.main{position:fixed;inset:64px 0 auto 0;background:var(--bg-deep);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:.5rem 1.25rem 1.25rem;transform:translateY(-120%);transition:transform .3s;z-index:99}
+  nav.main.open{transform:none}
+  nav.main a{padding:.8rem 0;border-bottom:1px solid var(--line)}
+  .burger{display:flex}
+}
+
+/* ---------- BREADCRUMB ---------- */
+.crumbs{padding:1.25rem 0 0;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+.crumbs a:hover{color:#fff}
+.crumbs .sep{color:var(--red);margin:0 .5rem}
+
+/* ---------- SPEC-SHEET PAGE ---------- */
+.prod-page{padding:1.5rem 0 4rem}
+.prod-hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+@media(max-width:860px){.prod-hero-inner{grid-template-columns:1fr;gap:1.5rem}}
+
+.prod-img-wrap{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--panel);border:1px solid var(--line)}
+.prod-img-wrap img{width:100%;height:100%;object-fit:cover;opacity:.85;transition:opacity .3s,transform 1s}
+.prod-img-wrap:hover img{opacity:1;transform:scale(1.05)}
+.prod-img-wrap .sku{position:absolute;top:.7rem;left:.8rem;z-index:2;font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--muted)}
+.prod-img-wrap .tag{position:absolute;top:.7rem;right:.8rem;z-index:2;font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;padding:.25rem .5rem;background:var(--red);color:#fff}
+
+.prod-info h1{font-family:var(--stencil);text-transform:uppercase;font-size:clamp(1.8rem,5vw,3.2rem);line-height:.95;letter-spacing:.02em;margin-bottom:.5rem}
+.prod-info h1 span{color:var(--red)}
+.prod-info .meta{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--olive);margin-bottom:1.25rem;display:flex;gap:.75rem;flex-wrap:wrap}
+.prod-info .meta span{border-right:1px solid var(--line);padding-right:.75rem}
+.prod-info .meta span:last-child{border-right:0}
+.prod-info .meta b{color:#fff;font-weight:400}
+.prod-price-block{margin:1.5rem 0;display:flex;align-items:baseline;gap:.75rem}
+.prod-price{font-family:var(--stencil);font-size:clamp(1.6rem,4vw,2.8rem);font-weight:600;color:#fff}
+.prod-price s{display:block;font-size:.7rem;font-weight:400;color:var(--muted)}
+.prod-price .rub{font-size:.8em;color:var(--olive)}
+.prod-actions{margin-top:2rem;display:flex;flex-wrap:wrap;gap:1rem}
+.btn{display:inline-flex;align-items:center;gap:.75rem;font-family:var(--stencil);text-transform:uppercase;letter-spacing:.12em;font-weight:600;font-size:.95rem;padding:1rem 2rem;transition:transform .2s,background .2s,border-color .2s}
+.btn:active{transform:scale(.97)}
+.btn-solid{background:var(--red);color:#fff}
+.btn-solid:hover{background:#f03328}
+.btn-ghost{border:1px solid var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--sand);color:#fff}
+
+/* ---------- SPEC TABLE ---------- */
+.specs-wrap{background:var(--panel);border:1px solid var(--line);padding:2rem;margin-top:2.5rem}
+.specs-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1.5rem;border-bottom:1px solid var(--line);padding-bottom:.75rem;flex-wrap:wrap}
+.specs-head h2{font-family:var(--stencil);text-transform:uppercase;font-size:1.25rem;font-weight:500}
+.specs-head span{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--muted)}
+.specs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+@media(max-width:640px){.specs-grid{grid-template-columns:1fr}}
+.spec-row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:.5rem}
+.spec-row:last-child{border-bottom:0}
+.spec-key{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--muted);flex:none}
+.spec-val{font-family:var(--stencil);font-weight:500;color:#fff;text-align:right}
+
+.stock-block{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center}
+.stock-status{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--olive)}
+.stock-status.low{color:var(--red)}
+.stock-delivery{font-size:.85rem;color:var(--muted)}
+
+.docs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+@media(max-width:640px){.docs-grid{grid-template-columns:1fr}}
+.doc-card{border:1px solid var(--line);padding:.9rem 1rem;display:flex;align-items:center;gap:.75rem;transition:border-color .2s}
+.doc-card:hover{border-color:var(--olive)}
+.doc-card svg{width:20px;height:20px;fill:var(--olive);flex:none}
+.doc-card span{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--text)}
+
+.back-link{display:inline-flex;align-items:center;gap:.5rem;margin-top:2.5rem;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+.back-link:hover{color:#fff}
+
+/* ---------- TOAST ---------- */
+.toast{position:fixed;bottom:2rem;left:50%;transform:translate(-50%,1rem);z-index:999;max-width:min(28rem,calc(100% - 2rem));background:rgba(20,21,20,.95);border:1px solid var(--line);border-left:2px solid var(--red);border-radius:6px;padding:.9rem 1.2rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;color:var(--sand);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+footer{padding:3rem 0;background:var(--bg-deep);border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;align-items:center}
+footer .fnote{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--muted)}
+footer .flinks{display:flex;gap:1.5rem;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+footer .flinks a:hover{color:#fff}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="coords">61.789°N 34.336°E · ПЕТРОЗАВОДСК</span>
+    <span><a href="tel:+79937654123">+7 (993) 765-41-23</a> · ЕЖЕДНЕВНО 10:00–20:00</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="logo-box">СПЕЦКУРС</span></a>
+    <nav class="main" id="menu">
+      <a href="index.html#catalog">Каталог</a>
+      <a href="index.html#hits">Витрина</a>
+      <a href="index.html#about">О магазине</a>
+      <a href="index.html#contacts">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#" class="cart-link">Корзина · 0</a>
+      <button class="burger" id="burger" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Хлебные крошки">
+    <a href="index.html">Главная</a><span class="sep">/</span><a href="index.html#catalog">Каталог</a><span class="sep">/</span><span>Броня и защита</span><span class="sep">/</span><span style="color:var(--sand)">Плитоноска «Страж-2»</span>
+  </nav>
+</div>
+
+<section class="prod-page">
+  <div class="wrap">
+    <div class="prod-hero-inner">
+
+      <div class="prod-img-wrap">
+        <span class="sku">SPC-0001</span>
+        <span class="tag">ХИТ</span>
+        <!-- Замените src на реальное фото: ./images/platonoska-1.jpg -->
+        <img src="https://images.unsplash.com/photo-1599566150163-29194da00b7e?q=80&w=900&auto=format&fit=crop" alt="Плитоноска «Страж-2» — общий вид" loading="lazy">
+      </div>
+
+      <div class="prod-info">
+        <h1>Плитоноска<br>«Страж-2»<span>™</span></h1>
+        <div class="meta">
+          <span>КАТЕГОРИЯ: <b>БРОНЯ</b></span>
+          <span>КЛАСС: <b>ПОД ПЛАСТИНЫ</b></span>
+          <span>ЦВЕТ: <b>ОЛИВА</b></span>
+        </div>
+        <div class="prod-price-block">
+          <div class="prod-price">8 900 <span class="rub">₽</span></div>
+          <!-- Если будет старая цена: <div class="prod-price"><s>9 500</s> 8 900 <span class="rub">₽</span></div> -->
+        </div>
+        <p style="color:var(--muted);font-weight:300;font-size:.95rem">Плитоноска под баллистические пластины 250×300 мм. Cordura 1000D, полная регулировка посадки, совместимость с любыми MOLLE-подсумками.</p>
+        <div class="prod-actions">
+          <button class="btn btn-solid" id="buy-btn">В корзину</button>
+          <a href="tel:+79937654123" class="btn btn-ghost">Позвонить</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="specs-wrap">
+      <div class="specs-head">
+        <h2>Характеристики</h2>
+        <span>SPEC-SHEET · SPC-0001 · РЕДАКЦИЯ 2026</span>
+      </div>
+      <div class="specs-grid">
+        <div class="spec-row"><span class="spec-key">Артикул</span><span class="spec-val">SPC-0001</span></div>
+        <div class="spec-row"><span class="spec-key">Материал</span><span class="spec-val">Cordura 1000D</span></div>
+        <div class="spec-row"><span class="spec-key">Совместимость</span><span class="spec-val">Пластины 250×300 мм</span></div>
+        <div class="spec-row"><span class="spec-key">Крепление</span><span class="spec-val">MOLLE / Velcro</span></div>
+        <div class="spec-row"><span class="spec-key">Вес изделия</span><span class="spec-val">1.2 кг</span></div>
+        <div class="spec-row"><span class="spec-key">Регулировка</span><span class="spec-val">Плечи · Бока · Грудная стяжка</span></div>
+        <div class="spec-row"><span class="spec-key">Цвет</span><span class="spec-val">Олива / Multicam</span></div>
+        <div class="spec-row"><span class="spec-key">Производство</span><span class="spec-val">РФ</span></div>
+      </div>
+
+      <div class="stock-block">
+        <span class="stock-status">● В НАЛИЧИИ · ШОУРУМ</span>
+        <span class="stock-delivery">Самовывоз сегодня · Доставка по РФ</span>
+      </div>
+
+      <div class="docs-grid">
+        <a href="#" class="doc-card">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V8h5V4h7v16z"/></svg>
+          <span>Паспорт изделия</span>
+        </a>
+        <a href="#" class="doc-card">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3zm-1 14-3-3 1.4-1.4L11 13.2l4.6-4.6L17 10l-6 6z"/></svg>
+          <span>Сертификат соответствия</span>
+        </a>
+        <a href="#" class="doc-card">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V4l5 5h-5z"/></svg>
+          <span>Инструкция по уходу</span>
+        </a>
+      </div>
+    </div>
+
+    <a href="index.html#hits" class="back-link">← Назад к витрине</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="fnote">СПЕЦКУРС · ПЕТРОЗАВОДСК · 2026</span>
+    <div class="flinks">
+      <a href="#">VK</a>
+      <a href="tel:+79937654123">Позвонить</a>
+      <a href="#">Доставка и оплата</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(() => {
+'use strict';
+
+/* Мобильное меню */
+const menu=document.getElementById('menu'),burger=document.getElementById('burger');
+burger.addEventListener('click',()=>menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+
+/* Тост */
+let toastEl=null,toastTimer=null;
+function showToast(message){
+  if(!toastEl){toastEl=document.createElement('div');toastEl.className='toast';toastEl.setAttribute('role','status');document.body.append(toastEl);}
+  toastEl.textContent=message;toastEl.classList.add('show');
+  clearTimeout(toastTimer);toastTimer=setTimeout(()=>toastEl.classList.remove('show'),4200);
+}
+
+/* Кнопка «В корзину» — витринная заглушка */
+document.getElementById('buy-btn').addEventListener('click',()=>{
+  showToast('«Плитоноска Страж-2» добавлена в список. Для оформления — позвоните или напишите в VK.');
+});
+})();
+</script>
+</body>
+</html>
